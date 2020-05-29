@@ -105,3 +105,6 @@ dist
 
 #pacage.lock files
 package-lock.json
+
+#vue modules
+client/node_modules/
