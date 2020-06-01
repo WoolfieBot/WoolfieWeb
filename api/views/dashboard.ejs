@@ -1,0 +1,16 @@
+
+<%- include('partials/header', {location: "Dashboard"}) -%>
+<%- include('partials/nav') -%>
+<div>
+  <% for(var k in guilds) {
+      let guild = guilds[k]
+      let perms = [];
+      permissions.get(guild.id).forEach((v,k) => {
+        perms.push(k)
+      })
+      if(perms.includes('ADMINISTRATOR') || perms.includes('MANAGE_GUILD')){
+  %>
+    <%- include('partials/guild', { guild, permissions }) -%>
+  <% }} %>
+</div>
+<%- include('partials/footer') -%>
