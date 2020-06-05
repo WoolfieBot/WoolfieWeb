@@ -14,8 +14,8 @@ passport.deserializeUser(async (id, done) => {
 });
 
 passport.use(new DiscordStrategy({
-    clientID: '715939386323370006',
-    clientSecret: 'x7at3g9WDKAacAB_7WMTQs0lUGX2WAAY',
+    clientID: '658593409401094147',
+    clientSecret: 'omHeshHtC1c21NcMGAAuwHYgaiWHbHoz',
     callbackURL: 'http://localhost:3000/api/redirect',
     scope: ['identify', 'guilds', 'guilds.join']
 }, async (accessToken, refreshToken, profile, done) => {

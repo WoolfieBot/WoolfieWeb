@@ -1,1 +1,1 @@
-["users"].forEach(x => require(`../models/${x}`))
+["users","guilds"].forEach(x => require(`../models/${x}`))

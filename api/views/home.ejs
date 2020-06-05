@@ -1,7 +1,63 @@
-<%- include('partials/header', {location: "MainPage"}) -%>
-  <div class="my-button">
-    <form action="/api/auth">
-      <button class="button is-primary is-rounded is-large custom-button" type="submit">Login with Discord</button>
-    </form>
-  </div>
-<%- include('partials/footer') -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WoolfieBot</title>
+  <link rel="icon" href="https://cdn.discordapp.com/icons/614842906418741248/dce595e498f8b90079c60bf033b4ea2e.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <p class="masthead-brand" style="font-size: 23px"><b>WoolfieBot </b><sup>Beta</sup></p>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Rate me!</a>
+        <a class="nav-link" href="#">Documentation</a>
+        <a class="nav-link" href="#">About</a>
+        <form action="/api/auth">
+          <button type="submit" class="btn btn-sm ml-3" style="border: solid midnightblue; color: silver">LOG IN</button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover" style="margin-top: 100px;">
+    <img src="https://cdn.discordapp.com/icons/614842906418741248/dce595e498f8b90079c60bf033b4ea2e.png">
+    <h1 class="cover-heading">Woolfie</h1>
+    <p class="lead">Brand new Discord bot with many functions for moderation, fun and logging information waht your moderators are do.</p>
+    <p class="lead">
+      <a href="https://discord.com/oauth2/authorize?client_id=658593409401094147&permissions=1609957366&scope=bot" class="btn btn-lg btn-dark btn-block">Add bot</a>
+      <a href="/documentation" class="btn btn-lg btn-info btn-block">Read the docs</a>
+    </p>
+    <section>
+      <img src="/1.png" class="image-section">
+      <div class="text-section">
+        <span style="font-size: 30px; font-weight: bold; color: aquamarine">ECONOMY</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi beatae commodi dicta dignissimos eius fugit, illum, iure, maiores mollitia nisi numquam odit omnis tempore vel veniam vero. Ex, totam!</p>
+      </div>
+    </section>
+    <section style="margin-bottom: 130px">
+      <img src="/1.png" class="image-section">
+      <div class="text-area">
+        <span style="font-size: 30px; font-weight: bold; color: aquamarine">LOGGING AND MODERATION</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi beatae commodi dicta dignissimos eius fugit, illum, iure, maiores mollitia nisi numquam odit omnis tempore vel veniam vero. Ex, totam!</p>
+      </div>
+    </section>
+  </main>
+  <footer class="mastfoot mt-auto fixed-bottom">
+    <div class="inner" style="background-color: #333333; display: -ms-flexbox; display: flex; justify-content: center; padding-top: 15px;">
+      <p>©2020 Woolfie | <a href="/premium">Get a Premium status</a> <a href="/staff">Staff</a> <a href="/appeal">Appeal</a>
+        <a href="/report">Report issue</a></p>
+    </div>
+  </footer>
+</div>
+<script src="/scripts/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -20,25 +20,16 @@
         </p>
       </div>
       <div class="content column">
+        <% let guildsArr = [];
+        clientGuilds.forEach(x => {
+          guildsArr.push(x.guildID)
+        })
+        if(guildsArr.includes(guild.id)) {
+        %>
         <a class="button is-primary is-rounded is-large custom-button" href="/settings?gid=<%= guild.id %>">Setting <%= guild.name %></a>
-        <div class="dropdown is-hoverable">
-          <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-              <span>View Permissions</span>
-              <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <% permissions.get(guild.id).forEach((v,k) => { %>
-                  <li><%= k %></li>
-                <% }) %>
-              </div>
-            </div>
-          </div>
+        <%} else {%>
+          <a class="button is-primary is-rounded is-large custom-button" href="https://discord.com/oauth2/authorize?client_id=658593409401094147&permissions=1609957366&scope=bot">Invite to <%= guild.name %></a>
+        <%}%>
         </div>
       </div>
     </div>

@@ -1,28 +1,13 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item">
-      <h1>Welcome back, <%= username %></h1>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="/">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Documentation
-      </a>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <p class="masthead-brand" style="font-size: 23px"><b>WoolfieBot </b><sup>Beta</sup></p>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Documentation</a>
+        <form action="/api/logout">
+          <button type="submit" class="btn btn-sm ml-3" style="border: solid midnightblue; color: silver">LOG OUT</button>
+        </form>
+      </nav>
     </div>
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <form action="/api/logout">
-            <button class="button is-primary is-rounded  my-custom-button" type="submit">Logout</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+  </header>
